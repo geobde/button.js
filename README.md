@@ -5,8 +5,8 @@ Pure JavaScript button component
 
 ```javascript
 Button({
-  text: "This is a toast",
-  destination: "https://github.com/apvarun/toastify-js",
+  text: "This is a button",
+  destination: "https://github.com/geobde/button.js",
   onClick: function(){} // Callback after click
 });
 ```
