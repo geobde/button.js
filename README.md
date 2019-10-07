@@ -7,6 +7,7 @@ Pure JavaScript button component
 Button({
   text: "This is a button",
   destination: "https://github.com/geobde/button.js",
+  className: "Style your button",
   onClick: function(){} // Callback after click
 });
 ```
