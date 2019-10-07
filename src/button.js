@@ -1,7 +1,7 @@
 let options = {
    className:'custom-btn',
-   destination:'https://getemoji.com',
-   text:'😝',
+   destination:'https://github.com/geobde/button.js',
+   text:'Click Me',
    onClick: () => window.location = options.destination
 };
 
