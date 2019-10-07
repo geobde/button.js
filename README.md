@@ -1,18 +1,20 @@
 
 Pure JavaScript button component
 
-## API
+## Documentation
 
-| Prop              | Type       | Description |
-|-------------------|------------|-------------|
-| `checked`         | _object_  |  Use this if you want to treat the toggle as a controlled component. |
-| `defaultChecked`  | _object_  |  Use this if you want to treat the toggle as an uncontrolled component. |
-| `onChange`        | _function_ | A function which acts as a callback when the toggle is changed. |
-| `disabled`        | _boolean_  | If `true`, the toggle is disabled. If `false`, the toggle is enabled |
-
+```javascript
+Button({
+  text: "This is a toast",
+  destination: "https://github.com/apvarun/toastify-js",
+  onClick: function(){} // Callback after click
+});
+```
 
 ## Built With
 
-- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- A JavaScript library for building button component.
 
 ## License
+
+MIT Licensed. Copyright (c) George Bardi 2019.
