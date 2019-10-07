@@ -1,8 +1,6 @@
 
 Pure JavaScript button component
 
-![Alt text](https://github.com/geobde/button.js/blob/master/button.gif "Search")
-
 ## Documentation
 
 ```javascript
