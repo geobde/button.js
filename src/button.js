@@ -1,5 +1,15 @@
-var Button = function(settings) {
-   return Button.prototype.init(settings);
+(function(global) {
+
+  'use strict';
+
+/** Global Methods **/
+/***************************************************************************/
+
+/**
+ * Create the global controller. All contained methods and properties apply
+*/
+global.Button = function(settings) {
+   this.init(settings);
 };
 
 Button.prototype = {
@@ -10,15 +20,21 @@ Button.prototype = {
    text:'Click Me',
    onClick: () => window.location = Button.prototype.defaultOptions.destination
   },
+
+  /**
+   * Initialize the global Button object.
+  */
   init: function(settings) {
-     options = Object.assign(this.defaultOptions, settings)
-     this.createElement(options)
+     let self = this;
+     let options = Object.assign(self.defaultOptions, settings)
+     self.createElement(options)
   },
   createElement: function(options) {
+      let self = this;
       let divElement = document.createElement("div")
       divElement.innerHTML =  options.text
-      this.setAttributes('attribute', divElement, {'class':options.className})
-      this.setAttributes('listener', divElement,  {'click': options.onClick})
+      self.setAttributes('attribute', divElement, {'class':options.className})
+      self.setAttributes('listener', divElement,  {'click': options.onClick})
       document.querySelector(options.el).appendChild(divElement)
   },
   setAttributes: function(type, el, attrs)  {
@@ -43,4 +59,6 @@ Button.prototype = {
         return false;
       }
   },
-};
+}
+
+})(window);
